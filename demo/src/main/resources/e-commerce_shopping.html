@@ -1,0 +1,40 @@
+<head>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li v-for="data in datalist">
+                <input type="checkbox" v-model="checkgroup" :value="data"/>
+                {{data}}
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+
+        var vm = new Vue({
+            el:"#box",
+            data:{
+                datalist:[
+                    {
+                        id:"P001",
+                        name:"osii舒壓按摩椅",
+                        prict:98000,
+                        Number:5,
+                    },
+                    {
+                        id:"P002",
+                        name:"網友最愛起司蛋糕",
+                        prict:1200,
+                        Number:50,
+                    },
+                    {
+                        id:"P003",
+                        name:"真愛密碼項鍊",
+                        prict:8500,
+                        Number:20,
+                    }
+                ]
+            }
+        })
+</body>
